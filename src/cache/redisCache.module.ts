@@ -7,6 +7,7 @@ import { CacheModule } from '@nestjs/cache-manager';
   imports: [
     CacheModule.register({
       passwrod: 'somepassword',
+      //store: redisStore,
       host: '127.0.0.1',
       port: 6379,
       isGlobal: true,
